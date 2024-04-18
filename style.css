@@ -35,9 +35,11 @@ body{
 }
 
 header{
-    background-color: rgba(228, 126, 220, 0.508);
+    background-color:  rgba(255, 255, 255, 0.274);
     padding: 20px;
-    border-radius: 10px;
+
+    border-radius: 15px 15px 0px 0px;
+
     text-align: center;
 
     min-width: 280px;
@@ -61,6 +63,23 @@ header> p{
     margin-bottom: 10px;
     
 }
+
+nav{
+    background-color:rgba(181, 151, 178, 0.519);
+    padding: 10px;
+    
+    min-width: 280px;
+    max-width: 1020px;
+    margin: auto;
+}
+
+nav > a{
+    color: rgb(74, 32, 113);
+    padding-left: 180px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 a{
     color: black;
     text-decoration: none;
@@ -78,9 +97,9 @@ h2{
 }
 
 main{
-    background-color: rgba(228, 126, 220, 0.508);
+    background-color: rgba(255, 255, 255, 0.274);
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 0px 0px 15px 15px;
 
     min-width: 280px;
     max-width: 1000px;
@@ -92,24 +111,35 @@ main > h2{
 }
 
 main > img{
-    width: 50%;
+    max-width: 300px;
     display: block;
     margin: auto;
 }
 
-nav{
-    background-color:rgba(144, 75, 138, 0.508);
-    padding: 5px;
+#q1{
+    display: inline-block;
+    border: 2px solid black;
     border-radius: 10px;
-    
-    min-width: 280px;
-    max-width: 1000px;
-    margin: auto;
+    background-image: url(imagens/primeiro_post.jpg);
+    width: 300px;
+    height: 300px;
+    margin-left: 35px;
 }
 
-nav > a{
-    color: rgb(74, 32, 113);
-    padding-left: 90px;
-    text-decoration: none;
-    font-weight: bold;
+#q2 {
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-image: url(imagens/segundo_post.png);
+    width: 300px;
+    height: 300px;
+}
+
+#q3 {
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-image: url(imagens/terceiro_post.png);
+    width: 300px;
+    height: 300px;
 }
