@@ -1,15 +1,11 @@
 @charset "UTC-8";
 
 html, body {
-    height: 100%;
-
-body {
-    background-image: linear-gradient(to bottom, rgb(115, 115, 243), rgb(236, 124, 223));
-    background-size: cover; /* Faz o gradiente cobrir toda a altura */
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    margin: 20px;
-}
+    height: 100%;
+    margin: 10px;
+    background-image: linear-gradient(to bottom, rgb(115, 115, 243), rgb(236, 124, 223));
 
 div {
     display: inline-block;
