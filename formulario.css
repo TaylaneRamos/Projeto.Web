@@ -1,0 +1,89 @@
+@charset "UTC-8";
+
+html, body{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, rgb(115, 115, 243), rgb(236, 124, 223));
+}
+
+/*Pagina do formulario*/
+.form-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+.form-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+.form-container input[type="text"],
+.form-container input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.form-container input[type="submit"],
+.form-container input[type="reset"] {
+    width: 48%;
+    padding: 10px;
+    background-color: #251E42;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px 1%;
+}
+.form-container input[type="submit"]:hover,
+.form-container input[type="reset"]:hover {
+    background-color: #251E42;
+}
+
+/*pagina de cadastro de novo usuario:*/
+.form-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+.form-container h2 {
+    text-align: center;
+}
+.form-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+.form-container input[type="text"],
+.form-container input[type="number"],
+.form-container input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #251E42;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+.form-container button:hover {
+    background-color: #251E42;
+}

@@ -18,41 +18,17 @@ body{
     margin: 20px;
 }
 
-/* Estilo para o texto nas páginas específicas */
-.pagina03 h2 {
-    color: white; /* Define a cor do texto como branco */
-}
-
-.pagina03 a {
-    color: white;
-}
-
-/* Estilo para a página específica */
-.pagina03 {
-    background-color: rgb(255, 255, 255);
-    background-image: url(imagens/redes.socias.jpg);
-    background-size: cover; /* Para cobrir todo o espaço disponível */
-    background-position: center; /* Para centralizar a imagem */
-    background-attachment: fixed;  /* Para fixar a imagem no lugar enquanto você rola a página
-    /* Outras propriedades opcionais */
-    /* background-repeat: no-repeat;  // Para evitar a repetição da imagem */
-}
-
 header{
     background-color:  rgba(255, 255, 255, 0);
     padding: 20px;
-
     border-radius: 15px 15px 0px 0px;
-
     text-align: center;
-
     min-width: 280px;
     max-width: 1000px;
     margin: auto;
 }
 
 header> h1{
-
     color: rgb(74, 32, 113);
     font-family: "Italianno";
     font-size: 4em;
