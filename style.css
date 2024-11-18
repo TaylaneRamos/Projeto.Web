@@ -10,16 +10,15 @@
 
 */
 
-
-body{
+body {
     background-image: linear-gradient(to bottom, rgb(115, 115, 243), rgb(236, 124, 223));
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     margin: 20px;
 }
 
-header{
-    background-color:  rgba(255, 255, 255, 0);
+header {
+    background-color: rgba(255, 255, 255, 0);
     padding: 20px;
     border-radius: 15px 15px 0px 0px;
     text-align: center;
@@ -28,7 +27,7 @@ header{
     margin: auto;
 }
 
-header> h1{
+header > h1 {
     color: rgb(74, 32, 113);
     font-family: "Italianno";
     font-size: 4em;
@@ -36,31 +35,44 @@ header> h1{
     margin-bottom: 10px;
 }
 
-header> p{
+header > p {
     text-indent: 20px;
     margin: 4px;
     font-size: 0.9em;
     margin-bottom: 10px;
-    
 }
 
-nav{
-    background-color:rgba(181, 151, 178, 0);
+nav {
+    background-color: rgba(181, 151, 178, 0);
     padding: 10px;
-    
     min-width: 280px;
     max-width: 1020px;
     margin: auto;
+    display: flex; /* Torna o nav um contêiner flexível */
+    justify-content: space-evenly; /* Distribui os links uniformemente */
+    flex-wrap: nowrap; /* Impede a quebra de linha */
+    gap: 10px; /* Espaço entre os links */
 }
 
-nav > a{
+nav > a {
     color: rgb(74, 32, 113);
-    padding-left: 180px;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1em; /* Ajuste do tamanho da fonte */
+    white-space: nowrap; /* Garante que o texto dentro dos links não quebre */
 }
 
-a{
+@media (max-width: 768px) {
+    nav {
+        gap: 5px; /* Reduz o espaço entre os links em telas menores */
+    }
+
+    nav > a {
+        font-size: 0.9em; /* Reduz o tamanho da fonte em telas menores */
+    }
+}
+
+a {
     color: black;
     text-decoration: none;
 }
@@ -69,34 +81,33 @@ a:hover {
     text-decoration: underline;
 }
 
-
-h2{
+h2 {
     color: rgb(74, 32, 113);
     font-family: "Italianno";
     font-size: 3em;
 }
 
-main{
+main {
     background-color: rgba(255, 255, 255, 0);
     padding: 20px;
     border-radius: 0px 0px 15px 15px;
-
     min-width: 280px;
     max-width: 1000px;
     margin: auto;
 }
 
-main > h2{
+main > h2 {
     margin: 0px;
 }
 
-main > img{
+main > img {
     max-width: 300px;
     display: block;
     margin: auto;
 }
 
-#q1{
+/* Estilo das divs com imagens */
+#q1 {
     background-image: url(imagens/primeiro_post.png);
 }
 
@@ -108,30 +119,24 @@ main > img{
     background-image: url(imagens/terceiro_post.png);
 }
 
-/* Mantém o mesmo estilo, mas ajusta a largura para ser responsiva */
 #q1, #q2, #q3 {
     display: inline-block;
     border: 2px solid black;
     border-radius: 10px;
     background-size: cover;
     background-position: center;
-    width: 100%; /* Ajusta a largura para 100% do contêiner pai */
-    max-width: 300px; /* Define uma largura máxima para telas grandes */
-    aspect-ratio: 1 / 1; /* Mantém a proporção quadrada */
-    margin: 10px; /* Ajusta a margem para espaçamento */
+    width: 100%;
+    max-width: 300px;
+    aspect-ratio: 1 / 1;
+    margin: 10px;
 }
 
-/* Media query para telas menores */
+/* Responsividade */
 @media (max-width: 768px) {
     #q1, #q2, #q3 {
-        max-width: 45%; /* Ajusta o tamanho para metade da largura em telas menores */
-        margin: 5px; /* Reduz o espaçamento entre os elementos */
+        display: block;
+        margin: 10px auto;
+        max-width: 90%;
     }
 }
 
-@media (max-width: 480px) {
-    #q1, #q2, #q3 {
-        max-width: 100%; /* Usa a largura total do contêiner em telas pequenas */
-        margin: 5px 0; /* Espaçamento vertical menor para telas pequenas */
-    }
-}

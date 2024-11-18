@@ -1,49 +1,58 @@
-@charset "UTC-8";
+@charset "UTF-8";
 
-html, body{
+/* Estilo geral */
+html, body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     height: 100%;
     margin: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     background-image: linear-gradient(to bottom, rgb(115, 115, 243), rgb(236, 124, 223));
-
- /*torna a tabela (que esta dendro de uma div) responsiva)*/
-div#container{
-    overflow-x: auto;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
+/* Área de pesquisa */
+.search-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Permite que os itens quebrem linha */
 }
 
-table, th, td {
-    border: 1px solid #ddd;
+.search-container input[type="text"] {
+    flex: 1;
     padding: 8px;
-    text-align: center;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
-img {
-    width: 20px;
-    height: 20px;
+.search-container button {
+    padding: 8px 16px;
+    background-color: #251E42;
+    color: white;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
 }
 
-caption { /* Letras da tabela */
-    font-size: 1.5em;
-    font-weight: bold;
-    padding: 10px;
-    background-color: #251E42;
-    color: white;
+.search-container button:hover {
+    background-color: #3B2769;
 }
 
+/* Botão de cadastro */
 .button-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 10px 0;
     text-align: right;
-    margin-top: 10px;
 }
+
 .btn-cadastrar {
     padding: 10px 20px;
     background-color: #251E42;
@@ -51,29 +60,87 @@ caption { /* Letras da tabela */
     border: none;
     cursor: pointer;
     font-size: 16px;
-    margin: 30px;
+    border-radius: 5px;
 }
 
-/*Botão de pesquisa*/
-.search-container {
-    text-align: right;
-    margin-bottom: 10px;
+.btn-cadastrar:hover {
+    background-color: #3B2769;
 }
-.search-container input[type="text"] {
+
+/* Contêiner da tabela */
+#table-container {
+    width: 90%;
+    max-width: 800px;
+    overflow-x: auto; /* Permite rolagem horizontal */
+    margin: 20px 0;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo da tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+table, th, td {
+    border: 1px solid #dddddd00;
     padding: 8px;
-    width: 200px;
-    border: 1px solid #ccc;
-    border-radius: 4px 0 0 4px;
-    box-sizing: border-box;
+    text-align: center;
 }
-.search-container button {
-    padding: 8px 16px;
-    background-color: #251E42;
-    color: white;
-    border: none;
-    border-radius: 0 4px 4px 0;
+
+th {
+    background-color: #f2f2f2;
+}
+
+td img {
+    width: 20px;
+    height: 20px;
     cursor: pointer;
 }
-.search-container button:hover {
-    background-color: #251E42;
+
+/* Responsividade */
+@media (max-width: 768px) {
+    /* Ajusta o campo de pesquisa e o botão */
+    .search-container {
+        flex-direction: column; /* Itens ficam empilhados */
+        align-items: stretch; /* Estica os elementos para ocupar toda a largura */
+    }
+    .search-container input[type="text"],
+    .search-container button {
+        width: 100%;
+        margin: 5px 0; /* Espaçamento entre os itens */
+    }
+
+    /* Botão de cadastro centralizado */
+    .button-container {
+        text-align: center;
+    }
+    .btn-cadastrar {
+        width: 100%;
+    }
+
+    /* Ajusta a tabela */
+    table, th, td {
+        font-size: 0.9em;
+        padding: 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Campo de pesquisa ainda mais compacto */
+    .search-container input[type="text"],
+    .search-container button,
+    .btn-cadastrar {
+        font-size: 0.8em;
+        padding: 8px;
+    }
+
+    /* Tabela mais compacta */
+    table, th, td {
+        font-size: 0.8em;
+    }
 }
