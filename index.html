@@ -3,78 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="imagens/favicon-32x32.png" type="image/x-icon">
-    <title>Projeto.Web</title>
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <title>API</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="./index.js" defer></script>
 </head>
 <body>
-    <header>
-        <div class="container" id="nav-container">
-            <nav class="navbar navbar-expand-lg fixed-top">
-                <a href="#" class="navbar-brand">
-                    <img class="logo" src="imagens/arte100.png" alt="logo"> Grafica Noite Estrelada
-                </a>
-
-                <!-- Menu de hamburger -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
-                    <div class="navbar-nav">
-                        <a href="pag02.html" class="nav-item nav-link" id="portifolio">Portifolio</a>
-                        <a href="https://wa.me/5574999597390" target="_blank" rel="noopener noreferrer" class="nav-item nav-link" id="whatsapp">WhatsApp</a>
-                        <a href="https://www.instagram.com/noiteestreladadesigner/" target="_blank" rel="noopener noreferrer" class="nav-item nav-link" id="instagram">Instagram</a>
-                        <a href="formulario.html" class="nav-item nav-link" id="login">Login</a>
-                        <a href="sandbox.html" class="nav-item nav-link" id="teste">Teste</a>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </header>
-
-    <main>
-        <h2>Serviços:</h2>
-        <ol class="lista">
-            <li>Identidade Visual:</li>
-            <ul>
-                <li>Criação de logotipos</li>
-                <li>Design de cartões de visita, papel timbrado e envelopes.</li>
-                <li>Desenvolvimento de manual de identidade visual.</li>
-            </ul>
-            <li>Design de Materiais Impressos:</li>
-            <ul>
-                <li>Posters, flyers e banners.</li>
-                <li>Catálogos e menus.</li>
-                <li>Anúncios para revistas e jornais.</li>
-            </ul>
-            <li>Design Digital:</li>
-            <ul>
-                <li>Design de interfaces de usuário para websites e aplicativos.</li>
-                <li>Criação de banners e imagens para redes sociais.</li>
-            </ul>
-            <li>Fotografia e Edição de Imagem:</li>
-            <ul>
-                <li>Edição de fotos.</li>
-                <li>Tratamento de imagens para uso em diferentes mídias.</li>
-            </ul>
-            <li>Personalização de Eventos:</li>
-            <ul>
-                <li>Convites personalizados.</li>
-                <li>Material gráfico para eventos (banners, sinalizações).</li>
-            </ul>
-        </ol>
-    </main>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN6jIeHz" crossorigin="anonymous"></script>
-
-    <!-- Custom JS -->
-    <script src="js/script.js"></script>
+    <div class="box">
+        <h1>Cadastro</h1>
+        <form action="">
+            <input type="text" class="nome" name="nome" placeholder="Nome">
+            <input type="password" class="senha" name="senha" placeholder="Senha">
+            <button>Cadastrar</button>
+        </form>
+    </div>
 </body>
 </html>
